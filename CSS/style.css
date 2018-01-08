@@ -1,0 +1,130 @@
+body
+{
+	background-color: #3a3a3a;
+	font-family: Raleway;
+	padding-left: 10em;
+	padding-right: 10em;
+	font-size: 1em;
+	color: #139907;	
+}
+.button
+{
+	background-color: #139907;
+	width: 3.5em;
+	height: auto;
+	text-align: center;
+	padding: 0.4em;
+	color: #000000;
+	margin: auto;
+	position: relative;
+	font-size:auto;
+	border-radius: 1em;
+	float: left;
+}
+.button:hover
+{
+	background-color: #0f7a06;
+}
+a
+{
+	text-decoration: none;
+	color: #000000;
+}
+ul 
+{
+	list-style-type: none;
+}
+nav
+{
+	background-color: #139907;
+	width: auto;
+	font-size: 2em;
+	height: auto;
+	border-radius: 1em;
+}
+.bar
+{
+	display: inline;
+	float: center;
+}
+nav > .bar > li > a:hover
+{
+	color:#ffffff;	
+}
+.bar > li
+{
+	display: inline;
+	margin: auto;
+}
+#banner
+{
+	text-decoration: underline;
+	font-size: 5em;
+	margin: 0;
+	text-align: center;
+}
+.logo
+{
+	width: auto;
+	height: 4em;
+}
+#gavListen
+{
+	height: 25em;
+	width: auto;
+}
+#gavAbout
+{
+	float: right;
+	margin-left: 3px;
+}
+.listen > li
+{
+	margin-left: 1.5em;
+	margin-right: 1.5em;
+}
+#listenBlock
+{
+	margin-left: 30%;
+}
+footer
+{
+	float: center;
+}
+.grid
+{
+	float: left;
+}
+#control
+{
+	margin-right: 100%;
+}
+
+@media only screen and (max-width: 500px)
+{
+	body
+	{
+		font-size: 0.5em;
+		padding-left: 5em;
+		padding-right: 5em;
+	}
+	p, h3, h2, input
+	{
+		font-size: 2em;
+	}
+	.listen > li
+	{
+		margin-left: 0.2em;
+		margin-right: 0.2em;
+	}
+	#gavContact
+	{
+		height: auto;
+		width: 20em;
+	}
+	.thumbnail
+	{
+		height: auto;
+		width: 20em;
+	}
+}
