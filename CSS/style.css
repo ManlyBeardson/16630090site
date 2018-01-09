@@ -127,4 +127,9 @@ footer
 		height: auto;
 		width: 20em;
 	}
+	nav
+	{
+		font-size: 3em;
+		border-radius: 0;
+	}
 }
