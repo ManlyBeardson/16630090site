@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang = "en">
 <head>
-	<title>Log</title>
+	<title>Critical Log</title>
 	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet"> 
 	<link rel="stylesheet" href="CSS/style.css">
 	<script  src="https://code.jquery.com/jquery-1.6.1.min.js"></script>
@@ -21,7 +21,54 @@
 			<li><a href = "Demo.html">Demo</a></li>
 		</ul>
 	</nav>
-	
+	<h2>Current web standards compared to previous</h2>
+		<ul>
+			<li>HTML5 attempts to consolidate error checking, so that malformed documents can be corrected and validated. Previously, different bowser developers had their own means for doing this, which could lead to slight discrepancies. This is good because emerging providers will be able to easily utilise this rather than work out their own, and it standardises pages across all browsers, however it does become a slight inconvenience for those browsers that already have a system of their own.</li>
+			<li>HTML5 natively supports various applications that were previously provided through third parties such as JavaScript or browser-specific plugins. < audio >, < video >, and < canvas > tags are examples of this. This simplifies the development process as well as speeding up browsing for the user as more elements will be provided natively.</li>
+			<li>HTML5 provides different tags for an easier to read semantic markup. Tags such as < nav > and < article > have been introduced so that the document is not separated by a multitude of < div >s with different IDs. “When looking at HTML5 code, a closing element tag of < / header > for example, instantly tells you what element is closing, without the need to add a comment” (Ben Frain, 2012). This should speed up the development process as it makes it easier for not just the developer but other parties to read, although it slightly increases the complexity of learning the language.</li>
+			<li>Because of HTML5, browsers can also output the same font without discrepancies between devices, although there are still issues such as resolution that can subtly affect the appearance of the text.</li>
+		</ul>
+	<h2>Research</h2>
+		<p>As part of my initial research process, I considered several of Gavin Dunne’s pages and websites to get an understanding of the branding and layouts that fans would be used to.</p>
+		<ul>
+			<li>http://miracleofsound.net/</li>
+			<li>https://twitter.com/miracleofsound</li>
+			<li>https://www.youtube.com/channel/UCSfoxYTlCPFfglckBLrjpsA?ab_channel=miracleofsound</li>
+			<li>https://www.patreon.com/miracleofsound/posts</li>
+		</ul>
+		<p>It is a common theme for his logo to be presented large at the very top of the page, directly above a central navigation bar where all the main pages were directly accessible from each other. The central nav bar is important as it allows users to manoeuvre around the site quickly and without confusion.</p>
+		<p>Having a consistent font and colour scheme is equally vital, for while the music is largely varied the brand must remain stable to keep the user from becoming overwhelmed. The same is true for the layout and button styling.</p>
+		<p>To this end I created both the navigational bar and the buttons with rounded corners, and ensured that they would both be changed in the same way should the user enter a custom colour scheme. Similarly with the main logo, I used plain text with the Railroad font rather than an image; this enabled the colour scheme changes to affect it the same way as the text throughout the site. Use of local storage allowed any changes to the scheme to carry over to all pages.</p>
+		<img src = "Assets/log/index.png"/>
+		<img src = "Assets/log/about.png"/>
+		<img src = "Assets/log/updates.png"/>
+		<img src = "Assets/log/customise.png"/>
+		<img src = "Assets/log/listen.png"/>
+		<img src = "Assets/log/contact.png"/>
+		<img src = "Assets/log/demo.png"/>
+		<p>The only issue here is the colour input on the Customise page, however I have tested this on a few browsers and found it to be fine, so I am content to continue regardless as all other pages are fully validated. This would obviously require rectification were the site to become compatible for all browsers</p>
+	<h2>Interoperability</h2>
+		<p>The text and navigation bar condense themselves for smaller windows (as a liquid layout), and the CSS contains a media query to appropriately reshape and reorder the site for screens of a mobile size. This allows the user to reshape the window and still see the site without having to scroll sideways.</p>
+		<p>I have also ensured that my code is accepted by the main browsers, using vendor prefixes where appropriate, and have avoided such things as JavaScript classes which are not supported on outdated browsers like Internet Explorer (as shown below). </p>
+		<img src = "Assets/log/interoperability.png"/>
+	<h2>Areas of best practice</h2>
+		<h3>File Structuring</h3>
+			<p>The sitecache follows a logical structure, making it easy to locate, add, and remove files</p>
+			<img src = "Assets/log/files1.png"/>
+			<img src = "Assets/log/files2.png"/>
+		<h3>Browser Testing</h3>
+			<p>The site is shown to be compatible across these four browsers, on pc and mobile.</p>
+			<img src = "Assets/log/messenger.jpg"/>
+			<p>Messenger(mobile)</p>
+			<img src = "Assets/log/safari.jpg"/>
+			<p>Safari(mobile)</p>
+			<img src = "Assets/log/chrome.png"/>
+			<p>Chrome(pc)</p>
+			<img src = "Assets/log/edge.png"/>
+			<p>Edge(pc)</p>
+		<h3>Markup</h3>
+			<p>Clear indentation and naming conventions have been used to increase the code’s readability. Text elements have been structured as paragraphs for this reason also, as it otherwise has no effect on how it will be presented on the site.</p>
+			<img src = "Assets/log/markup.png"/>
 	<footer>
 		<ul class = "bar">
 			<li>
