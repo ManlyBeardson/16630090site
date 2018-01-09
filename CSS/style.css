@@ -127,4 +127,8 @@ footer
 		height: auto;
 		width: 20em;
 	}
+	nav
+	{
+		font-size: 1em;
+	}
 }
