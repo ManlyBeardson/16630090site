@@ -130,6 +130,6 @@ footer
 	nav
 	{
 		font-size: 3em;
-		border-radius: none;
+		border-radius: 0;
 	}
 }
